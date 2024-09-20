@@ -32,7 +32,7 @@ h1{
     width: 100%;
     height: 100%;
     background-size: 100% 100%;
-    background-color: black; /* in case the video doesn't fit the whole page*/
+    background-color: blue;
     background-image:
     background-position: center center;
     background-size: cover;

@@ -1,12 +1,28 @@
-p {
-  color: green;
+.css-selector {
+    background: linear-gradient(20deg, #243b66, #662424);
+    background-size: 400% 400%;
+    -webkit-animation: RJsGames 19s ease infinite;
+    -moz-animation: RJsGames 19s ease infinite;
+    -o-animation: RJsGames 19s ease infinite;
+    animation: RJsGames 19s ease infinite;
 }
-h1 {
-  color: green;
+@-webkit-keyframes RJsGames {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
-h2 {
-  color: green;
+@-moz-keyframes RJsGames {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
-h3 {
-  color: green;
+@-o-keyframes RJsGames {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes RJsGames {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }

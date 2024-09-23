@@ -33,7 +33,7 @@ h1{
     height: 100%;
     background-size: 100% 100%;
     background-color: black; 
-    background-image: /* our video */;
+    background-image: https://www.youtube.com/watch?v=X-HL-r5TOiU&list=PL4jjgxHdfmYabCPLJQCRwOw4oZ0TXuz1k&index=1;
     background-position: center center;
     background-size: cover;
     object-fit: cover; /*cover video background */

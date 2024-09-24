@@ -1,18 +1,18 @@
 {
-  "name": "Wafer Café",
-  "short_name": "Waf-Caf",
+  "name": "RJsGamesV2",
+  "short_name": "RJ-Gme",
   "description": "Play classic games online, such as Tiny Fishing and Knife Hit, or classic Nintendo 64, GBA, and DS games!",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#c9b9ff",
   "icons": [
     {
-      "src": "icon-192x192.png",
+      "src": "RJs Games.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "icon-512x512.png",
+      "src": "RJs Games.png",
       "type": "image/png",
       "sizes": "512x512"
     }

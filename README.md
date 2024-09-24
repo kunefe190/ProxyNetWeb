@@ -2,7 +2,7 @@
 
 <img width = 300 src = https://cdn-icons-png.flaticon.com/512/8002/8002111.png>
 
-# Games And Stuff
+# RJsGamesV2
 One of the coolest game websites you will ever see. This has pretty cool themes, a bunch of games, a chat room, and a lot more.
 ### Cloud Deploy Options:
 [![Deploy to Koyeb](https://binbashbanana.github.io/deploy-buttons/buttons/remade/koyeb.svg)](https://app.koyeb.com/deploy?type=git&repository=https://github.com/gamachikin/GamesAndStuff&branch=main&name=GamesAndStuff)

@@ -6,5 +6,3 @@
 One of the coolest game websites you will ever see. This has pretty cool themes, a bunch of games, a chat room, and a lot more.
 
 </div>
-
-> [!CAUTION]

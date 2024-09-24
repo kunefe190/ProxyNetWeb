@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="google-site-verification" content="LGeFxzKuMVDKKuK2MxPnlK_lX623SztjZ3iTnDh8O3w" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1024">
+    <link rel="shortcut icon" href="GamesAndStuffLogo.png" type="image/png" />
+    <title>Games & Stuff</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav>
+    <div class="navitems visible" style="background-color: rgba(0, 0, 0, 0.17); border-radius: 15px">
+      <div class="navitem" style="background-color: rgba(0, 0, 0, 0.2);border-radius: 15px 0px 0px 15px; width: 160px;"><a href="/changelog">Changelog</a></div>
+      <div class="navitem" style="background-color: rgba(0, 0, 0, 0.2);"><a href="/games">Games</a></div>
+      <div class="navitem" style="background-color: rgba(0, 0, 0, 0.2); border-radius: 0 15px 15px 0;"><a href="/apps">Apps</a></div>
+      <a href="/" class="mainNAVimage-container">
+        <img src="GamesAndStuffLogo.png" class="mainNAVimage">
+      </a>                                                                                                                 
+      <div class="navitem" style="background-color: rgba(0, 0, 0, 0.2); border-radius: 15px 0 0 15px;"><a href="/chat">Chat</a></div>
+      <div class="navitem" style="background-color: rgba(0, 0, 0, 0.2);"><a href="/settings">Settings</a></div>
+     <div class="navitem" style="background-color: rgba(0, 0, 0, 0.2);border-radius: 0px 15px 15px 0px;"><a href="/info">Info</a></div>
+    </div>
+  </nav>
+    <div class="siteinfos">
+      <h1>Welcome To Games &amp; Stuff</h1>
+      <p>Games And Stuff is a vibrant website featuring a variety of engaging games, an interactive drawing canvas, and a lively chat room, all refreshed with exciting new content.</p>
+    </div>
+    <div class="search-box">
+      <input type="text" id="search-bar" placeholder="Search for games or apps..." data-listener-added_18101588="true">
+      <div id="results-container"></div>
+    </div>
+    <script>
+      document.addEventListener('keydown', function(event) {
+        let typedGarfield = '';
+        let typedFred = '';
+        let fredCount = 0;
+
+        function handleGarfieldTyping(e) {
+          typedGarfield += e.key;
+          if (typedGarfield.endsWith('garfield')) {
+            document.body.style.backgroundImage = "url(/assets/icons/Garfield.jpg)";
+            function replaceText(element) {
+              const n = element.childNodes;
+              for (let i = 0; i < n.length; i++) {
+                replaceText(n[i]);
+                if (n[i].nodeType === Node.TEXT_NODE && n[i].nodeValue.trim() !== '') {
+                  n[i].textContent = 'Garfield';
+                }
+              }
+            }
+            replaceText(document.body);
+            document.removeEventListener('keydown', handleGarfieldTyping);
+          }
+        }
+
+        function handleFredTyping(e) {
+          typedFred += e.key;
+          if (typedFred.endsWith('fred')) {
+            fredCount++;
+            typedFred = '';
+            if (fredCount === 3) {
+              document.body.style.backgroundImage = "url(/assets/icons/Fred.jpg)";
+              function replaceTextWithFred(element) {
+                const n = element.childNodes;
+                for (let i = 0; i < n.length; i++) {
+                  replaceTextWithFred(n[i]);
+                  if (n[i].nodeType === Node.TEXT_NODE && n[i].nodeValue.trim() !== '') {
+                    n[i].textContent = 'Fred';
+                  }
+                }
+              }
+              replaceTextWithFred(document.body);
+              document.removeEventListener('keydown', handleFredTyping);
+            }
+          }
+        }
+
+        document.addEventListener('keydown', handleGarfieldTyping);
+        document.addEventListener('keydown', handleFredTyping);
+      });
+    </script>
+    <canvas id="particleCanvas"></canvas>
+    <script src="/particles.js"></script>
+    <script src="search.js"></script>
+    <script src="/index.js"></script>
+  </body>
+</html>

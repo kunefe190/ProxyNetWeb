@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1024">
+    <link rel="shortcut icon" href="GamesAndStuffLogo.png" type="image/png" />
+    <title>Games & Stuff</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="preload.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav>
+        <div class="navitems visible" style="background-color: rgba(0, 0, 0, 0.17); border-radius: 15px">
+          <div class="navitem" style="background-color: rgba(0, 0, 0, 0.2);border-radius: 15px 0px 0px 15px; width: 160px;"><a href="/changelog">Changelog</a></div>
+          <div class="navitem" style="background-color: rgba(0, 0, 0, 0.2);"><a href="/games">Games</a></div>
+          <div class="navitem" style="background-color: rgba(0, 0, 0, 0.2); border-radius: 0 15px 15px 0;"><a href="/apps">Apps</a></div>
+          <a href="/" class="mainNAVimage-container">
+            <img src="GamesAndStuffLogo.png" class="mainNAVimage">
+          </a>                                                                                                                 
+          <div class="navitem" style="background-color: rgba(0, 0, 0, 0.2); border-radius: 15px 0 0 15px;"><a href="/chat">Chat</a></div>
+          <div class="navitem" style="background-color: rgba(0, 0, 0, 0.2);"><a href="/settings">Settings</a></div>
+         <div class="navitem" style="background-color: rgba(0, 0, 0, 0.2);border-radius: 0px 15px 15px 0px;"><a href="/info">Info</a></div>
+        </div>
+      </nav>
+  <div style="padding-top: 115px; overflow: hidden;">
+    <div class="GameContainer">
+      <div class="FrameContainer">
+        <iframe allowfullscreen="true" frameborder="0" id="frame"></iframe>
+      </div>
+     <div id="AppInfo" class="GameInfo">
+       <div class="GameTitle" id="AppTitle"></div>
+         <div class="GameImageContainer">
+           <img id="AppImage" alt="app image">
+          </div>
+        <div class="GameDescription" id="AppDescription"></div>
+        <div class="GameButtons">
+          <button class="GameButtons1" onclick="toggleFullScreen()">Fullscreen</button>
+          <button class="GameButtons2" onclick="reloadPage()">Reload</button>
+          <button class="GameButtons3" onclick="goHome()">Home</button>
+        </div>
+    </div>
+    </div>
+   </div>
+  
+  </div>
+  <script src="/index.js"></script>
+  <script>
+    async function fetchAppData(appName) {
+        try {
+            const response = await fetch('apps.json');
+            const apps = await response.json();
+            const selectedApp = apps.find(app => app.name.toLowerCase() === appName.toLowerCase());
+            if (selectedApp) {
+                const iframe = document.getElementById('frame');
+                const appTitle = document.getElementById('AppTitle');
+                const appImage = document.getElementById('AppImage');
+                const appDescription = document.getElementById('AppDescription');
+
+                iframe.src = selectedApp.link;
+                appTitle.textContent = selectedApp.name;
+                appImage.src = selectedApp.image;
+                appDescription.textContent = selectedApp.description;
+            } else {
+                console.error('App not found');
+            }
+        } catch (error) {
+            console.error('Error fetching app data:', error);
+        }
+    }
+
+    const params = new URLSearchParams(window.location.search);
+    const appName = params.get('app');
+    if (appName) {
+        fetchAppData(appName).catch(error => console.error('Error in fetchAppData:', error));
+    } else {
+        console.error('No app specified');
+    }
+
+    // Function to toggle fullscreen mode
+    function toggleFullScreen() {
+        const iframe = document.getElementById('frame');
+        if (!document.fullscreenElement) {
+            iframe.requestFullscreen();
+        } else {
+            document.exitFullscreen();
+        }
+    }
+
+    // Function to reload the page
+    function reloadPage() {
+        location.reload();
+    }
+
+    // Function to navigate back to the home page
+    function goHome() {
+        window.location.href = '/';
+    }
+</script>
+<script>
+  document.addEventListener('keydown', function(event) {
+    // Check if the user is typing "Garfield"
+    let typed = '';
+    document.addEventListener('keydown', function(e) {
+      // Record the typed keys
+      typed += e.key;
+      if (typed.endsWith('garfield')) {
+        // Change the background image
+        document.body.style.backgroundImage = "url(/assets/icons/Garfield.jpg)";
+  
+        // Function to replace text with "Garfield"
+        function replaceText(element) {
+          const n = element.childNodes;
+          for (let i = 0; i < n.length; i++) {
+            replaceText(n[i]); // Recursively call for child nodes
+            if (n[i].nodeType === Node.TEXT_NODE && n[i].nodeValue.trim() !== '') {
+              n[i].textContent = 'Garfield'; // Replace text with "Garfield"
+            }
+          }
+        }
+  
+        // Start replacing text with "Garfield"
+        replaceText(document.body);
+  
+        // Stop listening for further key events
+        document.removeEventListener('keydown', arguments.callee);
+      }
+    });
+  });
+  </script>
+</body>
+</html>

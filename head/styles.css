@@ -250,13 +250,3 @@ body {
     padding: none !important;
     margin: none !important;
 }
-button{
-    height: 50px;
-    padding-left: 10px;
-    padding-right: 10px;
-    background-color: rgba(33, 58, 92, 0.4);
-    border: 3px solid black;
-    border-radius: 15px;
-    margin-left: 10px;
-    margin-right: 10px;
-}

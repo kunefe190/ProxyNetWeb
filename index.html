@@ -76,12 +76,6 @@
   
   
   <!-- Sections for FAQ and Changelog -->
- 
-   <div class="random-button-container">
-    <button id="Apps">Apps</button>
-  </div>
-  <div class="container"></div>
-
   <div id="faq" class="section">
     <h2>FAQ</h2>
     <p><b>Q: Why isn't my game working on mobile?</b></p>
@@ -158,13 +152,6 @@
       window.location.href = url;
     });
   });
-
-// Apps
-   Object.keys(games).forEach(gameName => {
-          const gameLink = games[gameName];
-          const buttonContainer = document.createElement('div');
-          buttonContainer.classList.add('button-container');
-          buttonContainer.setAttribute('onclick', `location.href='${gameLink}/'`);
 
   // Load game buttons dynamically from games.json
   window.onload = function() {

@@ -1,31 +1,29 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ruffle Embed</title>
-    <style>*{border:0;padding:0;margin:0;background-color:black;overflow: hidden;}</style>
-</head>
-<body style="background-color: black;">
-    <!-- Ruffle JS Script -->
+    <title>3kh0 | Learn To Fly IDLE</title>
     <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
-
-    <div>
-        <embed src="./learntoflyidle.swf" style="width: 100vw; height: 100vh;">
-    </div>
-
     <script>
-        // Load Ruffle when the page loads
-        window.RufflePlayer = window.RufflePlayer || {};
-        window.RufflePlayer.config = {
-            autoplay: "on",
-            allowfullscreen: "true",
-            unmuteOverlay: "hidden"
-        };
-        const ruffle = window.RufflePlayer.newest();
-        const container = document.querySelector('embed');
-        ruffle.createPlayer(container);
+        window.onload = function() { // resize flash game to fit window
+            var game = document.getElementById("game");
+            var width = window.innerWidth;
+            var height = window.innerHeight;
+            game.style.width = width + "px";
+            game.style.height = height + "px";
+        }
     </script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<embed>
+    <embed src="./ltf-idle.swf" type="application/x-shockwave-flash" id="game">
 </body>
 </html>

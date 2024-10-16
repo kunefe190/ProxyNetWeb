@@ -110,52 +110,6 @@
       loadParticles(newTheme);
     });
 
-    // Random game function
-    document.getElementById('random-game').addEventListener('click', function () {
-      const games = document.querySelectorAll('.button-container');
-      const randomGame = games[Math.floor(Math.random() * games.length)];
-      const onClickValue = randomGame.getAttribute('onclick');
-      const url = onClickValue.match(/location\.href='([^']+)'/)[1];
-      window.location.href = url;
-    });
-  });
-
-  // Load game buttons dynamically from games.json
-  window.onload = function() {
-    fetch('head/games.json')
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Network response was not ok ' + response.statusText);
-        }
-        return response.json();
-      })
-      .then(data => {
-        const games = data.games;
-        const container = document.querySelector('.container');
-
-        Object.keys(games).forEach(gameName => {
-          const gameLink = games[gameName];
-          const buttonContainer = document.createElement('div');
-          buttonContainer.classList.add('button-container');
-          buttonContainer.setAttribute('onclick', `location.href='${gameLink}/'`);
-
-          const img = document.createElement('img');
-          img.src = `/${gameLink}/img.jpeg`;
-          img.alt = gameName;
-
-          const span = document.createElement('span');
-          span.classList.add('button-text');
-          span.textContent = gameName;
-
-          buttonContainer.appendChild(img);
-          buttonContainer.appendChild(span);
-          container.appendChild(buttonContainer);
-        });
-      })
-      .catch(error => {
-        console.error('There was a problem with the fetch operation:', error);
-      });
-  };
   </script>
 
 </body>

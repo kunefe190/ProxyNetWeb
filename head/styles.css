@@ -1,6 +1,6 @@
 /* Set default theme colors */
 :root {
-    --background-color: #4a1b40;
+    --background-color: #1c1c1c;
     --text-color: white;
     --button-background: #2a2a2a;
     --button-border: #4c4c4c;
@@ -9,7 +9,7 @@
 
 /* Light mode */
 body.light-mode {
-    --background-color: #F1A73A;
+    --background-color: #000000;
     --text-color: #000;
     --button-background: #fff;
     --button-border: #ccc;;

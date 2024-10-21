@@ -11,7 +11,7 @@
 body.light-mode {
     --background-color: #ffaa5a;
     --text-color: #000;
-    --button-background: #fff;
+    --button-background: #ffaa5a;
     --button-border: #ccc;;
 }
 

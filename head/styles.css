@@ -9,7 +9,7 @@
 
 /* Light mode */
 body.light-mode {
-    --background-color: #cccccc;
+    --background-color: #ffaa5a;
     --text-color: #000;
     --button-background: #fff;
     --button-border: #ccc;;

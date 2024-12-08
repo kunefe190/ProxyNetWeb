@@ -20,3 +20,7 @@ I did fork this and I will leave a credits area for the OG website. I have impro
 - You cant fly above the screen
 - Collect coins to slow down the police
 - If you touch the police you die
+
+## Credits
+- [RJLee88](https://github.com/RJLee88/RJsGamesV2) - The OG website!
+- [3kh0](https://gitlab.com/3kh0/3kh0-assets) - Some of games!

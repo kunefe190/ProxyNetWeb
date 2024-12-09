@@ -23,7 +23,7 @@ I did fork this and I will leave a credits area for the OG website. I have impro
 
 ## Links
 - [proxy-net-web-vercel.vercel.app](https://proxy-net-web-vercel.vercel.app/) - Vercel
-- [2348hi.github.io/ProxyNetWeb](2348hi.github.io/ProxyNetWeb/) - Vercel
+- [2348hi.github.io/ProxyNetWeb](2348hi.github.io/ProxyNetWeb/) - Github Pages
 
 ## Credits
 - [RJLee88](https://github.com/RJLee88/RJsGamesV2) - The OG website!

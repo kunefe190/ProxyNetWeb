@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RJsProxy</title>
+    <title>ProxyNetWeb</title>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -158,19 +158,19 @@
 <body>
     <div class="container" id="app">
         <div id="auth-screen">
-            <h1>RJsProxy V2</h1>
+            <h1>ProxyNetWeb</h1>
             <input type="password" id="password" placeholder="Enter Access Code" aria-label="Password">
             <button onclick="authenticate()">Enter</button>
             <p id="error" class="error" aria-live="polite"></p>
         </div>
         <div id="game-screen" style="display: none;">
-            <h1>RJsProxy</h1>
+            <h1>ProxyNetWeb</h1>
             <div id="category-filters" class="category-filters" role="group" aria-label="Game categories"></div>
             <div id="game-list" class="game-list"></div>
         </div>
         <div id="game-iframe" style="display: none;">
             <div class="game-controls">
-                <button onclick="showGameList()">Return to RJsProxy</button>
+                <button onclick="showGameList()">Return to ProxyNetWeb</button>
                 <button onclick="toggleFullscreen()">Fullscreen</button>
             </div>
             <h2 id="game-title"></h2>
@@ -192,11 +192,6 @@
 
         let currentCategory = 'all';
 
-        document.addEventListener('keydown', function(event) {
-            if (event.key === '9') {
-                window.location.href = 'https://classroom.google.com';
-            }
-        });
 
         function authenticate() {
             const password = document.getElementById('password').value;
@@ -276,17 +271,17 @@
             if (!document.fullscreenElement) {
                 if (iframe.requestFullscreen) {
                     iframe.requestFullscreen();
-                } else if (iframe.webkitRequestFullscreen) { // Safari
+                } else if (iframe.webkitRequestFullscreen) {
                     iframe.webkitRequestFullscreen();
-                } else if (iframe.msRequestFullscreen) { // IE11
+                } else if (iframe.msRequestFullscreen) {
                     iframe.msRequestFullscreen();
                 }
             } else {
                 if (document.exitFullscreen) {
                     document.exitFullscreen();
-                } else if (document.webkitExitFullscreen) { // Safari
+                } else if (document.webkitExitFullscreen) {
                     document.webkitExitFullscreen();
-                } else if (document.msExitFullscreen) { // IE11
+                } else if (document.msExitFullscreen) {
                     document.msExitFullscreen();
                 }
             }

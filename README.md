@@ -21,6 +21,10 @@ I did fork this and I will leave a credits area for the OG website. I have impro
 - Gets updated all the time!
 - More links coming out soon!
 
+## Links
+- [proxy-net-web-vercel.vercel.app](https://proxy-net-web-vercel.vercel.app/) - Vercel
+- [2348hi.github.io/ProxyNetWeb](2348hi.github.io/ProxyNetWeb/) - Vercel
+
 ## Credits
 - [RJLee88](https://github.com/RJLee88/RJsGamesV2) - The OG website!
 - [3kh0](https://gitlab.com/3kh0/3kh0-assets) - Some of the new games!

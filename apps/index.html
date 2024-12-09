@@ -7,9 +7,7 @@
   <meta name="keywords" content="emulator, games, unblocked, gaming, game website, nintendo ds emulator, etc.">
   <title>ProxyNetWeb</title>
   
-  <!-- Styles and Fonts -->
   <link rel="stylesheet" href="head/styles.css">
-  <link rel="icon" type="image/png" href="https://i.ibb.co/1m7W4rt/RJs-Games-removebg-preview.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
@@ -47,7 +45,7 @@
 
   <!-- Header and Navigation -->
   <div id="header">
-    <h1><a href="#" id="title"><img src="https://i.ibb.co/qxfvBs4/New-Project-1.png"></a></h1>
+    <h1><a href="#" id="title"><img src="https://i.ibb.co/ZVcdcjy/chart3-0.png"></a></h1>
     <div class="nav-links">
       <a href="index.html">Home</a>
       <input type="text" id="search" placeholder="Search for a game...">
@@ -59,7 +57,6 @@
 <img src="https://pusd.doc.sc.gov/wp-content/uploads/2022/07/comingsoon.gif" alt="Logo">
   </center>
  
-  <!-- Dropdown for settings -->
   <div id="dropdown">
     <h2>Settings</h2>
     <label>
@@ -67,7 +64,6 @@
     </label>
   </div>
 
-  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script>
   document.addEventListener('DOMContentLoaded', function () {
@@ -77,7 +73,6 @@
     const dropdown = document.getElementById('dropdown');
     const themeToggle = document.getElementById('theme-toggle');
     
-    // Load and save particles setting in localStorage
     const savedParticlesSetting = JSON.parse(localStorage.getItem('particlesEnabled')) ?? true;
     particlesToggle.checked = savedParticlesSetting;
     particlesContainer.style.display = savedParticlesSetting ? 'block' : 'none';
@@ -92,7 +87,6 @@
       dropdown.classList.toggle('open');
     });
 
-    // Function to load particles based on theme
     function loadParticles(theme) {
       const particlesConfig = theme === 'light-mode' ? 'dark-particles.json' : 'light-particles.json';
       particlesJS.load('particles-js', `head/${particlesConfig}`, function() {
@@ -100,7 +94,6 @@
       });
     }
 
-    // Theme toggle functionality
     const savedTheme = localStorage.getItem('theme') || 'dark-mode';
     document.body.classList.add(savedTheme);
     themeToggle.textContent = savedTheme === 'light-mode' ? '🌙' : '☀️';
@@ -114,7 +107,6 @@
       loadParticles(newTheme);
     });
 
-    // Random game function
     document.getElementById('random-game').addEventListener('click', function () {
       const games = document.querySelectorAll('.button-container');
       const randomGame = games[Math.floor(Math.random() * games.length)];
@@ -124,7 +116,6 @@
     });
   });
 
-  // Load game buttons dynamically from games.json
   window.onload = function() {
     fetch('head/games.json')
       .then(response => {

@@ -1,6 +1,6 @@
 {
-  "name": "RJsGamesV2",
-  "short_name": "RJ-Gme",
+  "name": "ProxyNetWeb",
+  "short_name": "ProxyNet",
   "description": "Play classic games online, such as Tiny Fishing and Knife Hit, or classic Nintendo 64, GBA, and DS games!",
   "start_url": "/",
   "display": "standalone",

@@ -1,6 +1,6 @@
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=The+Next+Generation+Of+Unblocked+games;Redefining+the+word+unblocked;For+School%2FWork)](https://git.io/typing-svg)
 
-# Proxy Network
+# Proxy Network Website
 An unblocked game website!
 
 

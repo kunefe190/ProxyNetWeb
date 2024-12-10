@@ -24,7 +24,7 @@ I did fork this and I will leave a credits area for the OG website. I have impro
 ## Links
 - [proxy-net-web-vercel.vercel.app](https://proxy-net-web-vercel.vercel.app/) - Vercel
 - [2348hi.github.io/ProxyNetWeb](https://2348hi.github.io/ProxyNetWeb/) - Github Pages
-- [proxynetweb-render.onrender.com](https://proxynetweb-render.onrender.com/) - Render
+- [proxynetweb.onrender.com](https://proxynetweb.onrender.com/) - Render
 - [proxynetworkweb.global.ssl.fastly.net](https://proxynetworkweb.global.ssl.fastly.net/) - Fastly
 - [wind-zealous-cylinder.glitch.me](https://wind-zealous-cylinder.glitch.me/) - Glitch
 - [proxynetweb-vercel-production.up.railway.app](https://proxynetweb-vercel-production.up.railway.app/) - Railway

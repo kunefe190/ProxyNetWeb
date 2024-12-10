@@ -26,9 +26,9 @@ I did fork this and I will leave a credits area for the OG website. I have impro
 - [2348hi.github.io/ProxyNetWeb](https://2348hi.github.io/ProxyNetWeb/) - Github Pages
 - [proxynetweb.onrender.com](https://proxynetweb.onrender.com/) - Render
 - [proxynewwork.global.ssl.fastly.net](https://proxynewwork.global.ssl.fastly.net/) - Fastly
-- [wind-zealous-cylinder.glitch.me](https://wind-zealous-cylinder.glitch.me/) - Glitch
-- [proxynetweb-vercel-production.up.railway.app](https://proxynetweb-vercel-production.up.railway.app/) - Railway
-- [proxynetweb.netlify.app](https://proxynetweb.netlify.app/) - Netifly
+- [pumped-poised-marimba.glitch.me](https://pumped-poised-marimba.glitch.me/) - Glitch
+- [proxynetweb-production.up.railway.app](https://proxynetweb-production.up.railway.app/) - Railway
+- [proxynetworkweb.netlify.app](https://proxynetworkweb.netlify.app/) - Netifly
 
 ## Credits
 - [RJLee88](https://github.com/RJLee88/RJsGamesV2) - The OG website!

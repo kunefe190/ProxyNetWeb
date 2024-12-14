@@ -33,3 +33,4 @@ I did fork this and I will leave a credits area for the OG website. I have impro
 ## Credits
 - [RJLee88](https://github.com/RJLee88/RJsGamesV2) - The OG website!
 - [3kh0](https://gitlab.com/3kh0/3kh0-assets) - Some of the new games!
+- [Interstellar](https://github.com/UseInterstellar/Interstellar) - Proxy!

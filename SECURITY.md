@@ -4,7 +4,7 @@
 
 > Version 1.2, February 2021
 
-> Copyright (C) 2024 fullname
+> Copyright (C) year fullname
  
  Everyone is permitted to copy and distribute verbatim or modified copies of this license document.
 

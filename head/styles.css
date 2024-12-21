@@ -232,7 +232,6 @@ body {
     padding: 10px 0;
     font-size: 14px;
     z-index: 1000;
-    /* Hidden until needed */
 }
 
 #cp-footer p {
@@ -243,9 +242,7 @@ body {
 
 #cp-footer i {
     margin-right: 8px;
-    /* Add some space between icon and text */
     vertical-align: middle;
-    /* Align icon with text */
 }
 
 #cp-footer a {

@@ -221,6 +221,51 @@ body {
     height: 100px;
 }
 
+#cp-footer {
+    left: 0;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    background-color: var(--background-color);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    z-index: 1000;
+    display: none;
+    /* Hidden until needed */
+}
+
+#cp-footer p {
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+
+#cp-footer i {
+    margin-right: 8px;
+    /* Add some space between icon and text */
+    vertical-align: middle;
+    /* Align icon with text */
+}
+
+#cp-footer a {
+    color: #00aaff;
+    text-decoration: underline;
+}
+
+#cp-footer button {
+    background-color: #00aaff;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 4px;
+}
+
+
 #dropdown.open {
     opacity: 1;
     top: 0px;

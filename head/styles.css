@@ -223,7 +223,7 @@ body {
 
 #cp-footer {
     left: 0;
-    position: fixed;
+    position: static;
     bottom: 0;
     width: 100vw;
     background-color: var(--background-color);

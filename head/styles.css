@@ -232,7 +232,6 @@ body {
     padding: 10px 0;
     font-size: 14px;
     z-index: 1000;
-    display: none;
     /* Hidden until needed */
 }
 

@@ -5,19 +5,13 @@
 </head>
 <body>
 <script>
-
-function wait(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
-}
-  
 var win = window.open()
-var url = "https://proxynetweb-production.up.railway.app"
+var url = "https://www.google.com/"
 var iframe = win.document.createElement('iframe')
 iframe.style.width = "100%";
 iframe.style.height = "100%";
 iframe.src = url
 win.document.body.appendChild(iframe)
-wait(2000)
 window.close()
 </script>
 </body>
